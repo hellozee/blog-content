@@ -1,0 +1,25 @@
+baseurl = "https://hellozee.github.io"
+title = "A Nerd's Tale"
+copyright = "Copyright &copy; 2019 - Kuntal Majumder"
+canonifyurls = true
+theme = "plain-n-simple"
+
+paginate = 3
+
+summaryLength = 30
+enableEmoji = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+disqusShortname = "hellozee-me"
+googleAnalytics = "UA-120453931-1"
+
+[author]
+    name = "hellozee"
+    github = "hellozee"
+    gitlab = "hellozee"
+    linkedin = "mkuntal"
+    twitter = "hellozee54"
+    email = "hellozee at disroot.org"
+
+[params]
+    tagline = "A place where I can shout"
