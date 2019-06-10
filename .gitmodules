@@ -1,0 +1,3 @@
+[submodule "themes/plain-n-simple"]
+	path = themes/plain-n-simple
+	url = https://github.com/hellozee/plain-n-simple.git
