@@ -6,7 +6,7 @@ categories = ["krita"]
 
 +++
 
-Finally, I can write myself off as a professional developer, cause for the first time I got paid, that also by cash, for writing code. So after the `boost` battle of last month, it was time to test the algorithm out in the wild and not limit it to the confined boundary of the tests.
+Finally, I can write myself as a professional developer, cause for the first time I got paid, that also by cash, for writing code. So after the `boost` battle of last month, it was time to test the algorithm out in the wild and not limit it to the confined boundary of the tests.
 
 Didn't play much with the code, this week, took a break and just relaxed. To point out a couple of things, I did get hold of the mouse events, how they are passed and evaluated by the tool subsystem of Krita. A couple of discussions around how it would be implemented. And a little bit of optimizing the algorithm. And for all, I got a small gif of the tool in action which I requested 4 years back, though it still needs a lot of work. Not that accurate to be honest and at the same time there are places where it can be optimized
 
