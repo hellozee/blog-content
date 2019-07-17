@@ -1,8 +1,8 @@
-baseurl = "https://hellozee.github.io"
+baseurl = "https://www.hellozee.dev"
 title = "A Nerd's Tale"
 copyright = "Copyright &copy; 2019 - Kuntal Majumder"
 canonifyurls = true
-theme = "plain-n-simple"
+theme = "yinyang"
 
 paginate = 3
 
@@ -15,11 +15,30 @@ googleAnalytics = "UA-120453931-1"
 
 [author]
     name = "hellozee"
-    github = "hellozee"
-    gitlab = "hellozee"
-    linkedin = "mkuntal"
-    twitter = "hellozee54"
-    email = "hellozee at disroot.org"
 
 [params]
     tagline = "A place where I can shout"
+
+[[params.socials]]
+    name = "Github"
+    link = "https://github.com/hellozee"
+
+[[params.socials]]
+    name = "LinkedIn"
+    link = "https://www.linkedin.com/in/mkuntal"
+
+[[params.socials]]
+    name = "Invent"
+    link = "https://invent.kde.org/kuntalmajumder"
+
+[[params.socials]]
+    name = "Twitter"
+    link = "https://twitter.com/hellozee54/"
+
+[[params.socials]]
+    name = "Instagram"
+    link = "https://www.instagram.com/_hellozee_/"
+
+[[params.socials]]
+    name = "Artstation"
+    link = "https://hellozee.artstation.com/"

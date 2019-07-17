@@ -1,3 +1,21 @@
 [submodule "themes/plain-n-simple"]
 	path = themes/plain-n-simple
 	url = https://github.com/hellozee/plain-n-simple.git
+[submodule "themes/zen"]
+	path = themes/zen
+	url = https://github.com/frjo/hugo-theme-zen.git
+[submodule "themes/book"]
+	path = themes/book
+	url = https://github.com/alex-shpak/hugo-book
+[submodule "themes/simple-hugo-theme"]
+	path = themes/simple-hugo-theme
+	url = https://github.com/Xzya/simple-hugo-theme
+[submodule "themes/inkblotty"]
+	path = themes/inkblotty
+	url = https://github.com/tosi29/inkblotty.git
+[submodule "themes/hugo-nuo"]
+	path = themes/hugo-nuo
+	url = https://github.com/laozhu/hugo-nuo
+[submodule "themes/yinyang"]
+	path = themes/yinyang
+	url = https://github.com/joway/hugo-theme-yinyang
