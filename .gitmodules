@@ -19,3 +19,24 @@
 [submodule "themes/yinyang"]
 	path = themes/yinyang
 	url = https://github.com/joway/hugo-theme-yinyang
+[submodule "themes/indigo"]
+	path = themes/indigo
+	url = https://github.com/AngeloStavrow/indigo.git
+[submodule "themes/edidor"]
+	path = themes/edidor
+	url = https://github.com/jacobsun/edidor
+[submodule "themes/aether"]
+	path = themes/aether
+	url = https://github.com/josephhutch/aether.git
+[submodule "themes/tale"]
+	path = themes/tale
+	url = https://github.com/EmielH/tale-hugo.git
+[submodule "themes/dgraph"]
+	path = themes/dgraph
+	url = https://github.com/dgraph-io/hugo-dgraph-theme
+[submodule "themes/temple"]
+	path = themes/temple
+	url = https://github.com/aos/temple.git
+[submodule "themes/simpleblox"]
+	path = themes/simpleblox
+	url = https://github.com/okabrionz/simpleblox

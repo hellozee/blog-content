@@ -1,0 +1,129 @@
+diff --git a/layouts/_default/single.html b/layouts/_default/single.html
+index 04b5f8a..386af7a 100644
+--- a/layouts/_default/single.html
++++ b/layouts/_default/single.html
+@@ -19,14 +19,23 @@
+             </div>
+             <div class="col-xs-6">
+               <div class="post-author">
+-                <a target="_blank" href="{{ .Site.Author.homepage }}">@{{ .Site.Author.name }}</a>
++                <a href="{{ .LanguagePrefix }}/">@{{ .Site.Author.name }}</a>
+               </div>
+             </div>
+           </div>
++          <br>
++          <div class="row">
++            <div class="col-xs-12">
++              {{ range $i, $t := .Params.tags }}                              
++                {{ if $i }}, {{ end }}                                      
++                <a href="/tags/{{$t | urlize }}/">#{{ $t }}</a>             
++              {{ end }}
++            </div>
+         </header>
+ 
+         <div class="post-content markdown-body">
+           {{ .Content }}
++          <h5>have something to share about the blog? drop an email to hellozee at disroot dot org</h5>
+         </div>
+ 
+         {{ partial "related.html" . }}
+@@ -52,4 +61,4 @@
+ 
+ </body>
+ 
+-</html>
+\ No newline at end of file
++</html>
+diff --git a/layouts/partials/header.html b/layouts/partials/header.html
+index 7c72a28..9f3afaf 100644
+--- a/layouts/partials/header.html
++++ b/layouts/partials/header.html
+@@ -1,7 +1,7 @@
+ {{ $curLanguageName := .Site.Language.LanguageName }}
+ <header>
+   <div class="signatures site-title">
+-    <a href="{{ .LanguagePrefix }}/">{{ .Site.Author.name }}</a>
++    <a href="{{ .LanguagePrefix }}/">{{ .Site.Title }}</a>
+   </div>
+ </header>
+ <div class="row end-xs">
+diff --git a/layouts/section/list.html b/layouts/section/list.html
+index e69de29..d77475f 100644
+--- a/layouts/section/list.html
++++ b/layouts/section/list.html
+@@ -0,0 +1,37 @@
++<!DOCTYPE html>
++<html lang="en">
++{{ partial "head.html" . }}
++
++<body>
++  <article class="posts">
++    <div class="row">
++      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 col-lg-6 col-lg-offset-3">
++        {{ partial "header.html" . }}
++        <div id="posts-list">
++          {{ range .Data.Pages.GroupByDate "2006" -}}
++          <section>
++            <h1 class="site-date-catalog">{{ .Key }}</h1>
++
++            {{ range .Pages -}}
++            <div class="row post-line">
++              <div class="posts-date col-xs-2">
++                <time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
++              </div>
++              <div class="posts-title col-xs-10">
++                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
++              </div>
++            </div>
++            {{ end }}
++          </section>
++          {{ end }}
++        </div>
++
++        {{ partial "footer.html" . }}
++      </div>
++    </div>
++  </article>
++
++  {{ partial "scripts.html" . }}
++</body>
++
++</html>
+diff --git a/layouts/taxonomy/list.html b/layouts/taxonomy/list.html
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/static/css/index.css b/static/css/index.css
+index 03568b2..b2c1294 100644
+--- a/static/css/index.css
++++ b/static/css/index.css
+@@ -75,11 +75,12 @@ a:hover {
+   margin-top: 50px;
+   margin-bottom: 80px;
+   display: flex;
+-  justify-content: flex-end;
++  justify-content: center;
++  flex-wrap: wrap;
+ }
+ 
+ .site-footer-item {
+-  margin-right: 12px;
++  margin: 12px;
+ }
+ 
+ /* post */
+@@ -125,8 +126,6 @@ a:hover {
+   hyphens: auto;
+   line-height: 1.6;
+   text-align: justify;
+-  text-justify: ideographic;
+-  word-break: break-all;
+   margin-bottom: 1em;
+ }
+ 
+@@ -152,4 +151,4 @@ a:hover {
+   position: absolute;
+   bottom: 0;
+   background: white;
+-}
+\ No newline at end of file
++}
