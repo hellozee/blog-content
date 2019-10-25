@@ -8,6 +8,8 @@ categories = ["krita"]
 
 So, finally it seems like, after crossing the deadline by a couple months, Magnetic Lasso is going to get merged, as [Boud](https://valdyas.org/) told me. Lets see how many more weeks it takes, so presumably it is complete feature wise but who knows from where a bug might pop up. This post is mainly for documenting how the Magnetic Lasso works, since I am too good to make an entry in the manual.
 
+**Update:** It got merged in `master`, could be tried by downloading one of the nightlies, :smiley:.
+
 Initially, I started writing the tool as almost one to one copy of the Photoshop one, but as it has always been, Krita is not Photoshop. A small quirk in the code-base, unknown to me, threw me off the deadline, though to be honest, I was never going to make it by the estimated deadline, given how I miscalculated the effort required for doing the job. Oh, btw do you know Adobe is deactivating all the user accounts in Venezuela to comply with an executive order? It is high time to switch to free software, :smile:.
 
 Anyway, the first thing to note is, it no longer works like the PS one, and what I mean by it is, fundamentally both do the same thing, but the User Experience or the UX is different. In Photoshop, 
