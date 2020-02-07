@@ -6,6 +6,8 @@ categories = ["krita"]
 
 +++
 
+**Update:** This feature is now merged into master and can be tested out by downloading any of the Krita Next version. The UX has changed a lot, [here](https://www.hellozee.dev/to_be_merged_in_master/) is an updated post about the UX.
+
 I won't say that I am done with Magnetic Lasso now, but the results are a lot better now to be honest. Take a look at one of the tests that I did,
 
 {{< youtube nhT3cbzBpOk >}}

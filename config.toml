@@ -28,10 +28,6 @@ googleAnalytics = "UA-120453931-1"
     link = "https://www.linkedin.com/in/mkuntal"
 
 [[params.socials]]
-    name = "Invent"
-    link = "https://invent.kde.org/kuntalmajumder"
-
-[[params.socials]]
     name = "Twitter"
     link = "https://twitter.com/hellozee54/"
 
@@ -42,3 +38,7 @@ googleAnalytics = "UA-120453931-1"
 [[params.socials]]
     name = "Artstation"
     link = "https://hellozee.artstation.com/"
+
+[[params.socials]]
+	name = "RSS"
+	link = "https://www.hellozee.dev/index.xml"
